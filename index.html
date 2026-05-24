@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Marketing & Communications</title>
+  <meta name="description" content="Smart Marketing & Communications - Solutions marketing, intermédiation commerciale, rapports d'activité et outils de gestion." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#hero" class="logo">
+        <img src="assets/logo.svg" alt="Smart Marketing & Communications" />
+      </a>
+
+      <button class="menu-toggle" aria-label="Ouvrir le menu">☰</button>
+
+      <nav class="main-nav">
+        <a href="#about">À propos</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section-diagonal-top" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content" id="about">
+          <h1>SMART MARKETING & COMMUNICATIONS</h1>
+          <p>
+            Nous sommes spécialisés dans la création et la gestion d'applications web,
+            ainsi que dans le commerce de produits spécifiques. Notre expertise vous
+            permet de dynamiser votre entreprise avec des solutions innovantes.
+          </p>
+          <a href="#contact" class="btn btn-primary">CONTACTEZ-NOUS</a>
+        </div>
+
+        <div class="hero-visual">
+          <img src="assets/hero-illustration.png" alt="Illustration marketing et reporting" />
+        </div>
+      </div>
+    </section>
+
+    <section class="services-section" id="services">
+      <div class="container">
+        <h2 class="section-title">Découvrez nos services dès aujourd'hui !</h2>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-icon">📦</div>
+            <h3>Import-Export</h3>
+            <p>
+              Nous gérons vos opérations d'import export avec professionnalisme,
+              facilitant vos échanges commerciaux à l'international.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">🖥️</div>
+            <h3>Création d'Applications Webs</h3>
+            <p>
+              Nous concevons et développons des applications sur mesure
+              pour vous aider à optimiser vos processus.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">📊</div>
+            <h3>Intermédiation Commerciale</h3>
+            <p>
+              Nous servons d'intermédiaire pour vous aider à trouver
+              et à vendre des produits sur le marché français et à l'international.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">🛠️</div>
+            <h3>Services & Goodies</h3>
+            <p>
+              Nous fournissons des services et des supports personnalisés
+              pour renforcer votre image et fidéliser vos clients.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="split-section split-section-left section-diagonal-left">
+      <div class="container split-grid">
+        <div class="split-visual">
+          <img src="assets/report-visual.png" alt="Visuel rapport d'activité" />
+        </div>
+
+        <div class="split-content">
+          <span class="eyebrow">RAPPORT D'ACTIVITÉ</span>
+          <h2>Des rapports rapides et fiables pour votre entreprise</h2>
+          <p>
+            Nous utilisons des outils d'analyse pour vous permettre de prendre
+            des décisions éclairées, améliorant ainsi votre réactivité et votre efficacité.
+          </p>
+          <a href="#contact" class="btn btn-primary">EN SAVOIR PLUS</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="split-section split-section-right section-diagonal-right">
+      <div class="container split-grid reverse-mobile">
+        <div class="split-content">
+          <span class="eyebrow">OUTILS MARKETING</span>
+          <h2>Identifiez les tendances du marché et gérez votre activité efficacement</h2>
+          <p>
+            Bénéficiez de médias, d'outils et de modèles pertinents
+            pour optimiser votre gestion commerciale.
+          </p>
+        </div>
+
+        <div class="split-visual">
+          <img src="assets/tools-visual.png" alt="Visuel outils marketing" />
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="container cta-grid">
+        <div class="cta-left">
+          <h2>Commencez dès aujourd'hui !</h2>
+          <a href="#contact" class="btn btn-light">COMMENCER</a>
+        </div>
+
+        <div class="cta-right">
+          <ul>
+            <li>Solutions personnalisées facilement à modifier et à adapter à vos besoins.</li>
+            <li>Analyse de l'activité pour mieux piloter vos opérations.</li>
+            <li>Interfaces propres, claires et simples à prendre en main.</li>
+            <li>Accompagnement réactif sur vos enjeux commerciaux.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section section-diagonal-bottom" id="contact">
+      <div class="container contact-container">
+        <h2 class="contact-title">Formulaire</h2>
+        <p class="contact-subtitle">
+          Remplissez le formulaire pour être recontacté dans les plus brefs délais
+        </p>
+
+        <form name="contact" method="POST" data-netlify="true" class="contact-form">
+          <input type="hidden" name="form-name" value="contact" />
+
+          <div class="form-row">
+            <input type="text" name="name" placeholder="Nom complet" required />
+            <input type="email" name="email" placeholder="Votre email" required />
+          </div>
+
+          <textarea name="message" placeholder="Message" rows="6" required></textarea>
+
+          <button type="submit" class="btn btn-primary form-btn">Envoyer</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Adresse :</h3>
+        <p>161 Avenue Victor Hugo 93300 Aubervilliers</p>
+      </div>
+
+      <div>
+        <h3>Envoyez nous un email :</h3>
+        <p><a href="mailto:contact@smartmc.fr">contact@smartmc.fr</a></p>
+      </div>
+
+      <div>
+        <h3>Siren :</h3>
+        <p>932 232 622</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
